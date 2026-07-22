@@ -25,12 +25,13 @@
 
 # 只执行export是临时的，只有echo写入文件中才会永久存在
 echo export HISTTIMEFORMAT="\'%F %T \`whoami\` \" >> /etc/profile
+# \和c语言一样都是转义字符配套使用的
 # /etc/profile是所有用户（全局配置文件）
 # ~/.bashrc是当前用户
 
 
 # 清楚所有历史记录
-histort -c     # 但是文件中还有历史记录，没有彻底清楚
+history -c     # 但是文件中还有历史记录，没有彻底清楚
 rm -rf .bash_history    # 删掉这个文件才会彻底清楚历史记录
 
 
