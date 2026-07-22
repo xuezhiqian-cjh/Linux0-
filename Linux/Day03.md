@@ -43,6 +43,8 @@ rm -rf .bash_history    # 删掉这个文件才会彻底清楚历史记录
 
 
 ### 字符集中英文切换
+
+！ 切换字符集主要是为了解决乱码问题
 ```bash
 # 查看是什么语言
 cat /etc/locale.conf
